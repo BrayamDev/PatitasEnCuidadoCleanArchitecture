@@ -1,0 +1,6 @@
+@PatitasEnCuidadoCleanArchitecture.API_HostAddress = http://localhost:5224
+
+GET {{PatitasEnCuidadoCleanArchitecture.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
