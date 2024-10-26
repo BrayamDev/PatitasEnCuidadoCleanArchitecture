@@ -1,18 +1,14 @@
 ﻿using PatitasEnCuidadoCleanArchitecture.Application.Interface;
 using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 
 namespace PatitasEnCuidadoCleanArchitecture.Application.Services
 {
     public class AnimalFundacionService : IAnimalFundacionService
     {
-        private readonly IAnimalFundacionService _repositoryAnimalFundacionService;
+        private readonly IAnimalFundacionRepository _repositoryAnimalFundacionService;
 
-        public AnimalFundacionService(IAnimalFundacionService repositoryFundacionService)
+        public AnimalFundacionService(IAnimalFundacionRepository repositoryFundacionService)
         {
             this._repositoryAnimalFundacionService = repositoryFundacionService;
         }
