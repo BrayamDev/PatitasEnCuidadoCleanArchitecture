@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatitasEnCuidadoCleanArchitecture.Domain.Interface
+namespace PatitasEnCuidadoCleanArchitecture.Application.Interface
 {
-    public interface IAnimalAdoptanteRepository
+    public interface IAnimalAdoptanteService
     {
         Task<List<AnimalAdoptante>> GetAllAnimalAdoptanteAsync();
         Task<AnimalAdoptante> GetAnimalAdoptanteByIdAsync(int Id);

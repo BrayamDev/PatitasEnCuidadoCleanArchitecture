@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository
 {
-    public class FundacionRepository
+    public class FundacionRepository : IFundacionRepository
     {
         private readonly PatitasEnCuidadoDbContext _Context;
 
@@ -37,7 +38,7 @@ namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository
             return await _Context.Fundaciones.ToListAsync();
         }
 
-        public async Task<Fundacion> GetFundacionById(int Id)
+        public async Task<Fundacion> GetFundacionByIdAsync(int Id)
         {
             if (Id <= 0)
             {

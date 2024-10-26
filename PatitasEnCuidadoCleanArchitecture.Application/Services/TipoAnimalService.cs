@@ -1,5 +1,5 @@
 ﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;

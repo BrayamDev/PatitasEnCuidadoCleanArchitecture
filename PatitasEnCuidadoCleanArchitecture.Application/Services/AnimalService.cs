@@ -1,5 +1,6 @@
-﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
+﻿using PatitasEnCuidadoCleanArchitecture.Application.Interface;
+using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,9 @@ namespace PatitasEnCuidadoCleanArchitecture.Application.Services
 {
     public class AnimalService : IAnimalService 
     {
-        private readonly IAnimalService _animalService;
+        private readonly IAnimalRepository _animalService;
 
-        public AnimalService(IAnimalService animalService)
+        public AnimalService(IAnimalRepository animalService)
         {
             this._animalService = animalService;
         }

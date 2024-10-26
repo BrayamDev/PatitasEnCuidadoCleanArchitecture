@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
 using System;
 using System.Collections.Generic;

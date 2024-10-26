@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatitasEnCuidadoCleanArchitecture.Application.Services
+namespace PatitasEnCuidadoCleanArchitecture.Application.Interface
 {
     public interface IAdoptanteService
     {

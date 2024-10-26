@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatitasEnCuidadoCleanArchitecture.API", "PatitasEnCuidadoCleanArchitecture.API\PatitasEnCuidadoCleanArchitecture.API.csproj", "{5BDBB3F2-5620-428D-977A-B12897AD5D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasEnCuidadoCleanArchitecture.API", "PatitasEnCuidadoCleanArchitecture.API\PatitasEnCuidadoCleanArchitecture.API.csproj", "{5BDBB3F2-5620-428D-977A-B12897AD5D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatitasEnCuidadoCleanArchitecture.Domain", "PatitasEnCuidadoCleanArchitecture.Domain\PatitasEnCuidadoCleanArchitecture.Domain.csproj", "{0DC4B8A9-672B-4C21-9C05-D1CD605A10E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasEnCuidadoCleanArchitecture.Domain", "PatitasEnCuidadoCleanArchitecture.Domain\PatitasEnCuidadoCleanArchitecture.Domain.csproj", "{0DC4B8A9-672B-4C21-9C05-D1CD605A10E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatitasEnCuidadoCleanArchitecture.Infrastructure", "PatitasEnCuidadoCleanArchitecture.Infrastructure\PatitasEnCuidadoCleanArchitecture.Infrastructure.csproj", "{E2BD9C3D-67AB-4BF6-87B1-9467B1172556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasEnCuidadoCleanArchitecture.Infrastructure", "PatitasEnCuidadoCleanArchitecture.Infrastructure\PatitasEnCuidadoCleanArchitecture.Infrastructure.csproj", "{E2BD9C3D-67AB-4BF6-87B1-9467B1172556}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatitasEnCuidadoCleanArchitecture.Application", "PatitasEnCuidadoCleanArchitecture.Application\PatitasEnCuidadoCleanArchitecture.Application.csproj", "{3D024A62-0297-4088-B290-D8F30AC5C97C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasEnCuidadoCleanArchitecture.Application", "PatitasEnCuidadoCleanArchitecture.Application\PatitasEnCuidadoCleanArchitecture.Application.csproj", "{3D024A62-0297-4088-B290-D8F30AC5C97C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

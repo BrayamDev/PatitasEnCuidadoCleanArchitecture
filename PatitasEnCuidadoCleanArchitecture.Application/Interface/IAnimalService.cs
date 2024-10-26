@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatitasEnCuidadoCleanArchitecture.Domain.Interface
+namespace PatitasEnCuidadoCleanArchitecture.Application.Interface
 {
-    public interface IAnimalRepository
+    public interface IAnimalService
     {
         Task<List<Animal>> GetAllAnimalAsync();
         Task<Animal> GetAnimalByIdAsync(int Id);
-        Task<Animal> CreateAnimalAsync(Animal animal, byte[] contenidoImagen = null);
-        Task<int> UpdateAnimalAsync(int Id, Animal animal, byte[] contenidoImagen = null);
+        Task<Animal> CreateAnimalAsync(Animal animal, byte[] contenidoImagen);
+        Task<int> UpdateAnimalAsync(int Id, Animal animal, byte[]? contenidoImagen = null);
         Task<int> DeleteAnimalAsync(int Id);
     }
 }

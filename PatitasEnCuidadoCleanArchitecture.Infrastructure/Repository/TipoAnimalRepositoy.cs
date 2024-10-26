@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository
 {
-    public class TipoAnimalRepositoy
+    public class TipoAnimalRepositoy : ITipoAnimalRepository
     {
 
         private readonly PatitasEnCuidadoDbContext _Context;
@@ -38,7 +39,7 @@ namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository
             return await _Context.TipoAnimales.ToListAsync();
         }
 
-        public async Task<TipoAnimal> GetTipoAnimalById(int Id)
+        public async Task<TipoAnimal> GetTipoAnimalByIdAsync(int Id)
         {
             if (Id <= 0)
             {
@@ -64,14 +65,14 @@ namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository
             }
         }
 
-        public async Task<int> UpdateVacunaAsync(int Id, TipoAnimal tipoAnimal)
+        public async Task<int> UpdateTipoAnimalAsync(int Id, TipoAnimal tipoAnimal)
         {
             return await _Context.TipoAnimales
-                .Where(model => model.Id == Id)
-                .ExecuteUpdateAsync(setters => setters
-                    .SetProperty(m => m.NombreTipoAnimal, tipoAnimal.NombreTipoAnimal)
-                    .SetProperty(m => m.Descripcion, tipoAnimal.Descripcion)
-                );
+               .Where(model => model.Id == Id)
+               .ExecuteUpdateAsync(setters => setters
+                   .SetProperty(m => m.NombreTipoAnimal, tipoAnimal.NombreTipoAnimal)
+                   .SetProperty(m => m.Descripcion, tipoAnimal.Descripcion)
+               );
         }
 
     }

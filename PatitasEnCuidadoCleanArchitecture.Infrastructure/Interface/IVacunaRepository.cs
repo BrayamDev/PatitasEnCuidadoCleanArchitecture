@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatitasEnCuidadoCleanArchitecture.Domain.Interface
+namespace PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface
 {
     public interface IVacunaRepository
     {

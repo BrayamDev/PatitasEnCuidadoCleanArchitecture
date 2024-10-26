@@ -1,6 +1,6 @@
 ﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
 
-namespace PatitasEnCuidadoCleanArchitecture.Application.Services
+namespace PatitasEnCuidadoCleanArchitecture.Application.Interface
 {
     public interface IVacunaService
     {

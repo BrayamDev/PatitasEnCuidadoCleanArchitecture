@@ -1,13 +1,8 @@
 ﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatitasEnCuidadoCleanArchitecture.Application.Services
+namespace PatitasEnCuidadoCleanArchitecture.Application.Interface
 {
-    public interface IFundacionRepository
+    public interface IFundacionService
     {
         Task<List<Fundacion>> GetAllFundacionAsync();
         Task<Fundacion> GetFundacionByIdAsync(int Id);

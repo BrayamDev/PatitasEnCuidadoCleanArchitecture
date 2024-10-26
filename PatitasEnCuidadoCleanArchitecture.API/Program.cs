@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using PatitasEnCuidadoCleanArchitecture.Application.Interface;
 using PatitasEnCuidadoCleanArchitecture.Application.Services;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +15,8 @@ builder.Services.AddDbContext<PatitasEnCuidadoDbContext>(options =>
 builder.Services.AddTransient<IVacunaRepository, VacunaRepository>();
 builder.Services.AddTransient<IVacunaService, VacunaService>();
 
-
+builder.Services.AddTransient<IFundacionRepository, FundacionRepository>();
+builder.Services.AddTransient<IFundacionService, FundacionService>();
 
 
 builder.Services.AddControllers();

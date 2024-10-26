@@ -1,19 +1,15 @@
-﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PatitasEnCuidadoCleanArchitecture.Application.Interface;
+using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 
 namespace PatitasEnCuidadoCleanArchitecture.Application.Services
 {
-    public class FundacionRepository : IFundacionRepository
+    public class FundacionService : IFundacionService
     {
 
         private readonly IFundacionRepository _fundacionRepository;
 
-        public FundacionRepository(IFundacionRepository fundacionRepository)
+        public FundacionService(IFundacionRepository fundacionRepository)
         {
             this._fundacionRepository = fundacionRepository;
         }

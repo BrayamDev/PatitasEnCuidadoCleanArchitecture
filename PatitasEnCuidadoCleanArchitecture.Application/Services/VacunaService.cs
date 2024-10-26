@@ -1,11 +1,6 @@
-﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
-using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
-using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PatitasEnCuidadoCleanArchitecture.Application.Interface;
+using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
 
 namespace PatitasEnCuidadoCleanArchitecture.Application.Services
 {
