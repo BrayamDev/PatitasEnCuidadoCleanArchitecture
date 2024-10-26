@@ -1,15 +1,10 @@
-﻿using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
+﻿using PatitasEnCuidadoCleanArchitecture.Application.Interface;
+using PatitasEnCuidadoCleanArchitecture.Domain.Entities;
 using PatitasEnCuidadoCleanArchitecture.Infrastructure.Interface;
-using PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatitasEnCuidadoCleanArchitecture.Application.Services
 {
-    public class TipoAnimalService : ITipoAnimalRepository
+    public class TipoAnimalService : ITipoAnimalService
     {
         private readonly ITipoAnimalRepository _tipoAnimalRepository;
 
