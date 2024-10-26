@@ -1,6 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using PatitasEnCuidadoCleanArchitecture.Application.Services;
+using PatitasEnCuidadoCleanArchitecture.Domain.Interface;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Data;
+using PatitasEnCuidadoCleanArchitecture.Infrastructure.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<PatitasEnCuidadoDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddTransient<IVacunaRepository, VacunaRepository>();
+builder.Services.AddTransient<IVacunaService, VacunaService>();
+
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
